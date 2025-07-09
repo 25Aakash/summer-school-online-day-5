@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Weather Now",
+  "version": "1.1",
+  "description": "Shows the weather at my location (learn-by-doing project).",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": { "48": "icons/icon.jpg" }
+  },
+  "icons": { "48": "icons/icon.jpg" },
+  "permissions": ["geolocation"],
+  "host_permissions": ["https://api.weatherapi.com/*"],
+  "content_security_policy": {
+    "extension_pages": "default-src 'self'; img-src 'self' https://cdn.weatherapi.com data:; connect-src 'self' https://api.weatherapi.com; script-src 'self';"
+  }
+}

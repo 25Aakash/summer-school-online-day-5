@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weather Now</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Weather Now</h1>
+
+  <!-- Weather icon comes from the API -->
+  <img id="icon" src="icons/icon.jpg" alt="Weather icon" />
+
+  <!-- °C / °F switch -->
+  <label id="unitSwitch">
+    <input type="checkbox" id="unitCheckbox" />
+    <span id="unitLabel">Show °F</span>
+  </label>
+
+  <button id="getWeather">Get Current Weather</button>
+
+  <div id="result" class="hidden">
+    <h2 id="city"></h2>
+    <p id="temp"></p>
+    <p id="condition"></p>
+  </div>
+
+  <p id="status" class="status"></p>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+body {
+  width: 300px;
+  padding: 16px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+
+#icon {
+  width: 64px;
+  height: 64px;
+  margin: 12px auto;
+  display: block;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+#unitSwitch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 14px;
+}
+
+.status {
+  margin-top: 12px;
+  color: red;
+  font-size: 0.8rem;
+}
+
+.hidden {
+  display: none;
+}
